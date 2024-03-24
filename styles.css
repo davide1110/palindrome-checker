@@ -1,0 +1,12 @@
+body {
+    background-color: #3285a8;
+}
+
+#check-btn {
+    cursor: pointer;
+}
+
+
+#header-text {
+    text-align: center;
+}
