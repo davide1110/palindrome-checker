@@ -1,12 +1,67 @@
 body {
-    background-color: #3285a8;
+    background-color: #36454F;
+    color: white;
+    text-align: center;
+    height: 500px;
+    
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+* {
+  font-family: century-gothic;
+  font-size: 20px;
+}
+
+#text-input {
+  border-radius: 5px;
+  height: 25px;
+  outline: none;
 }
 
 #check-btn {
     cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: darkcyan;
+    height: 25px;
+    width: 60px;
+    border: none;
+    
 }
+
+#form-info {
+  /*  text-align: center;*/
+}
+
+#result {
+   margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  /*  background-color: #4aea20;*/
+    background-color:#ca2f2f;
+    height: 35px;
+    border-radius: 10px;
+    width: 150px;
+    position: relative;
+   
+}
+
+#result-text {
+ position: absolute;
+ margin:auto;
+ top: 0; bottom: 0; left: 0; right: 0;
+ text-align: center;
+ height: 20px;
+}
+
 
 
 #header-text {
     text-align: center;
+    color: white;
+}
+p {
+  white-space: pre;
 }

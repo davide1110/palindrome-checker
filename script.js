@@ -3,7 +3,8 @@ function isAPalindrome() {
   let inputValue = document.querySelector("#text-input");
   let value = inputValue.value;
   if(value === undefined || value === "") {
-    alert('Please input a value');
+    alert('You have inserted nothing');
+    return;
   }
   let normalizedValue = normalizeValue(value);
   let isAPalindromeText = `${value} is not a palindrome`;
@@ -25,7 +26,8 @@ function normalizeValue(value1) {
 }
 
 function showPalindromeResult(isAPalindromeText) {
-    let result = document.querySelector("#result");
+    let result = document.querySelector("#result-text");
     console.log(isAPalindromeText);
     result.textContent = isAPalindromeText;
+    
 }
