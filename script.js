@@ -3,7 +3,7 @@ function isAPalindrome() {
   let inputValue = document.querySelector("#text-input");
   let value = inputValue.value;
   if(value === undefined || value === "") {
-    alert('You have inserted nothing');
+    alert('Please input a value');
     return;
   }
   let normalizedValue = normalizeValue(value);
@@ -26,8 +26,15 @@ function normalizeValue(value1) {
 }
 
 function showPalindromeResult(isAPalindromeText) {
-    let result = document.querySelector("#result-text");
+    let resultText = document.querySelector("#result-text");
+    let result = document.querySelector("#result");
     console.log(isAPalindromeText);
-    result.textContent = isAPalindromeText;
+    resultText.textContent = isAPalindromeText;
+    if(isAPalindromeText.includes("is not")) {
+      result.style.color = "#ca2f2f";
+      return;
+    }
+    result.style.color = "#4aea20"; 
+    
     
 }

@@ -5,13 +5,15 @@ body {
     height: 500px;
     
     width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    
    
 }
 * {
   font-family: century-gothic;
-  font-size: 20px;
+ /*  font-size: 20px; */
 }
 
 #text-input {
@@ -31,19 +33,13 @@ body {
     
 }
 
-#form-info {
-  /*  text-align: center;*/
-}
-
 #result {
    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-  /*  background-color: #4aea20;*/
-    background-color:#ca2f2f;
-    height: 35px;
+    height: 70px;
     border-radius: 10px;
-    width: 150px;
+    width: 40%;
     position: relative;
    
 }
@@ -62,6 +58,6 @@ body {
     text-align: center;
     color: white;
 }
-p {
-  white-space: pre;
+#text-info {
+  margin-top: 50px;
 }
