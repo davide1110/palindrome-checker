@@ -8,7 +8,7 @@ function isAPalindrome() {
   let normalizedValue = normalizeValue(value);
   let isAPalindromeText = `${value} is not a palindrome`;
   let reversedString = normalizedValue.split("").reverse().join("");
- if(normalizedValue === reversedString) {
+ if(normalizedValue.toLowerCase() === reversedString.toLowerCase()) {
    isAPalindromeText = `${value} is a palindrome`;
  }
  
@@ -17,8 +17,10 @@ function isAPalindrome() {
 }
 
 function normalizeValue(value1) {
-    const regex = "/_|@/i";
-   value1 = value1.replace(regex, '');
+  
+    const regex = /_|@|\s|,|\.|\(|\)|\/|\\|-/g;
+  // const regex = /_/i;
+   value1 = value1.replaceAll(regex, '');
     return value1;
 }
 
